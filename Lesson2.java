@@ -1,6 +1,30 @@
-public class Sound {
+public class Lesson2 {
     int x = 10;
     public static void main(String[] args) {
+        byte b;
+        int i;
+
+        b = 10;
+        i = b * b;
+
+        b = 10;
+        b = (byte) (b * b);
+
+
+
+
+
+        /*
+        int d = 0, x = 10;
+        if ( (d != 0) && (d > 10) ) {
+            int sum;
+            sum = x / 10;
+            System.out.println(sum);
+        }
+
+        Five.main();
+        Ten.main();
+
         double range, seconds, speedoflight, echo;
         seconds = 7.2;
         speedoflight = 1100;
@@ -15,13 +39,16 @@ public class Sound {
         System.out.println(y);
         ScopeDemo.main();
         SCops.main();
-
+        =============
         int z;
         z = 4;
         z &= 5;
         z = z & 5;
-
-        /*
+        =============
+        char ch1 = 'a', ch2 = 'b';
+        ch1 = (char) (ch1 + ch2);
+        =============
+        Four.main();
         char tab;
         tab = '\t';
         System.out.println(tab);
@@ -89,5 +116,44 @@ class SCops {
         }
 
          */
+    }
+}
+
+
+// Упражнения
+
+class Four {
+    public static void main() {
+        String x = "One", y = "Two", z = "Three";
+        System.out.println(x + " " + y + " " + z);
+    }
+}
+
+
+class Five {
+    public static void main() {
+        int i;
+        for (i = 0; i < 10; i++) {
+            int sum = 0;
+
+            sum = sum + i;
+
+            System.out.println("Sum: " + sum);
+        }
+    }
+}
+
+
+class Ten {
+    public static void main() {
+        int i,j;
+        boolean isprime;
+        for (i = 2; i < 100; i++) {
+            isprime = true;
+            for (j = 2; j < i; j++)
+                if ((i%j) == 0) isprime = false;
+            if (isprime)
+                System.out.println(i + " - is a prime number.");
+        }
     }
 }
