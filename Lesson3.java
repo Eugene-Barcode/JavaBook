@@ -1,8 +1,10 @@
 public class Lesson3 {
     public static void main(String[] args)
             throws java.io.IOException {
-                Shrek.main();
+
             /*
+
+            Shrek.main();
             char ch;
 
             System.out.print("Press the button and then press \"ENTER\": ");
